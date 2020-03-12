@@ -1,5 +1,4 @@
 module.exports = function getSeason(dt) {
-  console.log(dt);
   if(dt === undefined){
     return 'Unable to determine the time of year!'
   }else if(!dt.getTime()){
