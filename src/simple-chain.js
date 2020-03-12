@@ -12,8 +12,6 @@ const chainMaker = {
 
   removeLink(position) {
     if(Number.isInteger(position) && position>0 && position<this.arr.length){
-      console.log(' - ' + position)
-      console.log(' - ' + this.arr)
       this.arr = this.arr.slice(0, position-1).concat(this.arr.slice(position));
       return this;
     } else {
